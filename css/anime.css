@@ -1,0 +1,410 @@
+/* css anime */
+
+.js-scroll-fade {
+  position: relative;
+  opacity: 0;
+  transform: translate(0, 40px);
+  transition: all 1s cubic-bezier(0.155, 0.91, 0.695, 0.95);
+
+}
+  .js-scroll-fade.is-animation {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+.slide-in-left {
+  position: relative;
+  opacity: 0;
+  transform: translateX(-1000px);
+  transition: 1s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+  .slide-in-left.is-animation {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+.slide-in-right {
+  position: relative;
+  opacity: 0;
+  transform: translateX(1000px);
+  transition: 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+  .slide-in-right.is-animation {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+
+.bounce-in-top {
+  -webkit-animation: bounce-in-top 1.1s both;
+          animation: bounce-in-top 1.1s both;
+}
+
+@-webkit-keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-65px);
+            transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateY(-28px);
+            transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-65px);
+            transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateY(-28px);
+            transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+.blink-1:hover {
+  -webkit-animation: blink-1 0.6s both;
+          animation: blink-1 0.6s both;
+}
+
+@-webkit-keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.text-focus-in:hover {
+  -webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+          animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.puff-in-center {
+  -webkit-animation: puff-in-center 1.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+          animation: puff-in-center 1.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@-webkit-keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .slideshow {
+    	position: relative;
+    	overflow: hidden;
+      margin: 0 auto;
+      max-width: 560px;
+    }
+    input[name="slideshow"] {
+    	display: none;
+    }
+
+    /* :::::: slideContents :::::: */
+    .slideContents {
+    	position: relative;
+    	background: #fff;
+    	text-align: center;
+    	-webkit-user-select: none;
+    	user-select: none;
+    	transition: transform .6s;
+    }
+    .slideContents section {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	transform: translateX(100%);
+    	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    .slideContents section img {
+    	max-width: 100%;
+    	padding: 0 50px;
+    	box-sizing: border-box;
+    	vertical-align: middle;
+    }
+
+    /* :::::: arrows :::::: */
+    .arrow,
+    .arrow label,
+    .arrow .ico {
+    	position: absolute;
+    }
+    .arrow {
+    	top: 0;
+    	margin: 0;
+    	transition: background .3s;
+    }
+    .prev {
+    	left: 0;
+    }
+    .next {
+    	right: 0;
+    }
+    .arrow:hover {
+    	background: rgba(255,255,255,.2);
+    }
+    .arrow,
+    .arrow label {
+    	cursor: pointer;
+    	width: 50px;
+    	height: 100%;
+    }
+    .arrow label {
+    	top: 0;
+    	left: 0;
+    	z-index: 1;
+    }
+    .arrow .ico {
+    	top: calc(50% - 6px);
+    	width: 12px;
+    	height: 12px;
+    	border-top: 3px solid #505050;
+    	opacity: 1;
+    }
+    .prev .ico {
+    	left: 50%;
+    	border-left: 3px solid #505050;
+    	transform: rotate(-45deg);
+    	transition: left .3s cubic-bezier(0.215, 0.61, 0.355, 1), opacity .3s;
+    }
+    .next .ico {
+    	right: 50%;
+    	border-right: 3px solid #505050;
+    	transform: rotate(45deg);
+    	transition: right .3s cubic-bezier(0.215, 0.61, 0.355, 1), opacity .3s;
+    }
+    .arrow:hover .ico {
+    	opacity: .6;
+    }
+    .prev:hover .ico {
+    	left: calc(50% - 6px);
+    }
+    .next:hover .ico {
+    	right: calc(50% - 6px);
+    }
+
+    /* :::::: mechanism :::::: */
+    #switch1:checked ~ .slideContents #slide1,
+    #switch2:checked ~ .slideContents #slide2,
+    #switch3:checked ~ .slideContents #slide3,
+    #switch4:checked ~ .slideContents #slide4,
+    #switch5:checked ~ .slideContents #slide5 {
+    	position: relative;
+    	transform: none;
+    }
+    #switch1:checked ~ .slideContents #slide5,
+    #switch1:checked ~ .slideContents #slide4,
+    #switch2:checked ~ .slideContents #slide1,
+    #switch2:checked ~ .slideContents #slide5,
+    #switch3:checked ~ .slideContents #slide2,
+    #switch3:checked ~ .slideContents #slide1,
+    #switch4:checked ~ .slideContents #slide3,
+    #switch4:checked ~ .slideContents #slide2,
+    #switch5:checked ~ .slideContents #slide4,
+    #switch5:checked ~ .slideContents #slide3 {
+    	transform: translateX(-100%);
+    }
+    #switch1:checked ~ .slideContents #slide3,
+    #switch1:checked ~ .slideContents #slide4,
+    #switch2:checked ~ .slideContents #slide4,
+    #switch2:checked ~ .slideContents #slide5,
+    #switch3:checked ~ .slideContents #slide5,
+    #switch3:checked ~ .slideContents #slide1,
+    #switch4:checked ~ .slideContents #slide1,
+    #switch4:checked ~ .slideContents #slide2,
+    #switch5:checked ~ .slideContents #slide2,
+    #switch5:checked ~ .slideContents #slide3 {
+    	transition-duration: 0s;
+    }
+
+    /* :::::: arrow mechanism :::::: */
+    .arrow label {
+    	pointer-events: none;
+    }
+    #switch1:checked ~ .prev label[for="switch5"],
+    #switch2:checked ~ .prev label[for="switch1"],
+    #switch3:checked ~ .prev label[for="switch2"],
+    #switch4:checked ~ .prev label[for="switch3"],
+    #switch5:checked ~ .prev label[for="switch4"],
+    #switch1:checked ~ .next label[for="switch2"],
+    #switch2:checked ~ .next label[for="switch3"],
+    #switch3:checked ~ .next label[for="switch4"],
+    #switch4:checked ~ .next label[for="switch5"],
+    #switch5:checked ~ .next label[for="switch1"] {
+    	pointer-events: auto;
+    }
