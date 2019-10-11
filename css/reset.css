@@ -30,6 +30,7 @@ body {
   color: #505050;
   text-align: left;
   background-color: #fff;
+  overflow-x: hidden !important;
 }
 
 [tabindex="-1"]:focus {
