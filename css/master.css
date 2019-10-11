@@ -329,7 +329,8 @@
   position: relative;
   height: 100vh;
   background: #fff;
-  color: #505050; }
+  color: #505050; 
+  overflow-x: hidden !important; }
 
 .topWork-box {
   position: relative;
